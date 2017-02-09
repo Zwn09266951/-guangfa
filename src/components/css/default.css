@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "Microsoft YaHei";
+}
+a {
+	text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+.button {
+	height: 60px;
+	display: block;
+}
+body {
+	line-height: 1;
+	height: 100%;
+}
+img {
+	vertical-align: middle;
+}
+
+html {
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.warp {
+	margin: 0 auto;
+	width: 1160px;
+	min-width: 1160px;
+}
+.l {
+	float: left;
+}
+.r {
+	float: right;
+}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+
+.w60 {
+	width: 60px;
+}
+.w100 {
+	width: 100px;
+}
+.w120 {
+	width: 120px;
+}
+.w70 {
+	width: 70px;
+}
+.w80 {
+	width: 80px;
+}
+.w90 {
+	width: 90px;
+}
+.w130 {
+	width: 130px;
+}
+.w140 {
+	width: 140px;
+}
+.w180 {
+	width: 180px !important;
+	background-position: 156px 12px !important;
+}
+.h550 {
+	height: 550px;
+}
+.w9999 {
+	width: 9999px;
+}
+.ofa {
+	overflow: auto;
+}
+.lh1-2 {
+	height: 31px !important;
+	padding-top: 3px;
+	line-height: 1.2 !important;
+}
+.lh1 li{
+	line-height: 1.2 !important;
+}
+.pt10 li {
+	height: 39px !important;
+	padding-top: 13px;
+}
+.pl10 {
+	padding-left: 10px;
+}
+
+.pl30 {
+	padding-left: 30px;
+}
+.pr10 {
+	padding-right: 10px;
+}
