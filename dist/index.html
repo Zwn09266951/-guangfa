@@ -2,8 +2,11 @@
 <html lang="zh-cmn-Hans">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" ,="" content="IE=edge,chrome=1">
+  <meta name="description" ,="" content="">
+  <meta name="renderer" ,="" content="webkit">
   <title>Document</title>
-  <link rel="stylesheet" href="static/css/main.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/static/css/main.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
   <div class="app">
@@ -12,7 +15,7 @@
         <div class="l nav-bar--logo">
           <ul>
             <li>
-              <img src="../static/assets/img/logo.png" alt="">
+              <img src="/static/assets/img/logo.png" alt="">
             </li>
             <li>
               投资者教育基地
@@ -22,17 +25,17 @@
 
         <div class="nav-bar--search r">
           <div class="searchBtn">
-            <img src="../static/assets/img/search.png" alt="" class="searchShow">
-            <img src="../static/assets/img/close_new.png" alt="" style="display:none" class="searchClose">
+            <img src="/static/assets/img/search.png" alt="" class="searchShow">
+            <img src="/static/assets/img/close_new.png" alt="" style="display:none" class="searchClose">
           </div>
           <div class="searchBar">
-            <input type="text" name="" value="" placeholder="请输入关键字"><img src="../static/assets/img/search.png" alt="">
+            <input type="text" name="" value="" placeholder="请输入关键字"><img src="/static/assets/img/search.png" alt="">
           </div>
         </div>
 
         <ul class="r nav-bar--mune" id="mune">
-          <li>首页</li>
-          <li>知识中心<img src="../static/assets/img/dwon-arrow.png" alt="">
+          <li id="showtype"><a href="index.html">首页</a></li>
+          <li><a href="center.html">知识中心<img src="/static/assets/img/dwon-arrow.png" alt=""></a>
             <div class="nav-bar--munelist" id='munelist2'>
               <span><a href="#">新手入门</a></span>
               <span><a href="#">进阶知识</a></span>
@@ -49,8 +52,8 @@
               </span>
             </div>
           </li>
-          <li>投教视频</li>
-          <li>专项活动<img src="../static/assets/img/dwon-arrow.png" alt="">
+          <li><a href="video.html">投教视频</a></li>
+          <li><a href="activity.html">专项活动<img src="/static/assets/img/dwon-arrow.png" alt=""></a>
             <div class="nav-bar--munelist">
               <span><a href="#">整非活动</a></span>
               <span><a href="#">投教活动</a></span>
@@ -58,19 +61,18 @@
               <span><a href="#">反洗钱专栏</a></span>
             </div>
           </li>
-          <li>投资者保护<img src="../static/assets/img/dwon-arrow.png" alt="">
+          <li><a href="investor.html">投资者保护<img src="/static/assets/img/dwon-arrow.png" alt=""></a>
             <div class="nav-bar--munelist">
               <span><a href="#">公平在身边</a></span>
               <span><a href="#">诚信建设宣传活动</a></span>
             </div>
           </li>
-          <li>仿真交易<img src="../static/assets/img/dwon-arrow.png" alt="">
+          <li>仿真交易<img src="/static/assets/img/dwon-arrow.png" alt="">
             <div class="nav-bar--munelist">
-              <span><a href="#">仿真交易流程</a></span>
-              <span><a href="#">股指仿真规则</a></span>
-              <span><a href="#">国债仿真规则</a></span>
-              <span><a href="#">个人客户申请</a></span>
-              <span><a href="#">报名状态查询</a></span>
+              <span id="pop"><a href="#">仿真交易流程</a></span>
+              <span><a href="#">仿真规则</a></span>
+              <span><a href="http://www.gfqh.com.cn/tzzjy/gzfz/grkhsq/">个人客户申请</a></span>
+              <span><a href="http://www.gfqh.com.cn/tzzjy/gzfz/bmztcx/">报名状态查询</a></span>
             </div>
           </li>
         </ul>
@@ -78,21 +80,21 @@
     </div>
     <div class="carousel">
       <div class="carousel-imggroup" id="imggroup">
-        <a href=""><img src="../static/assets/img/5.jpg" alt=""></a>
-        <a href=""><img src="../static/assets/img/1.png" alt=""></a>
-        <a href=""><img src="../static/assets/img/2.jpg" alt=""></a>
-        <a href=""><img src="../static/assets/img/3.jpg" alt=""></a>
-        <a href=""><img src="../static/assets/img/4.jpg" alt=""></a>
-        <a href=""><img src="../static/assets/img/5.jpg" alt=""></a>
-        <a href=""><img src="../static/assets/img/1.png" alt=""></a>
+        <a href=""><img src="/static/assets/img/5.jpg" alt=""></a>
+        <a href=""><img src="/static/assets/img/1.png" alt=""></a>
+        <a href=""><img src="/static/assets/img/2.jpg" alt=""></a>
+        <a href=""><img src="/static/assets/img/3.jpg" alt=""></a>
+        <a href=""><img src="/static/assets/img/4.jpg" alt=""></a>
+        <a href=""><img src="/static/assets/img/5.jpg" alt=""></a>
+        <a href=""><img src="/static/assets/img/1.png" alt=""></a>
       </div>
 
       <div class="carousel-cutover" id="cutover">
         <div id="prev" class="l">
-          <img src="../static/assets/img/prev.png" alt="">
+          <img src="/static/assets/img/prev.png" alt="">
         </div>
         <div id="next" class="r">
-          <img src="../static/assets/img/next.png" alt="">
+          <img src="/static/assets/img/next.png" alt="">
         </div>
       </div>
 
@@ -106,28 +108,43 @@
     </div>
     <div class="section center">
       <h2>知识中心</h2>
-      <p>最基础0级证券投资知识，最快速秒级投资疑问解答，最实用权威投资维权资讯</p>
-      <div>
+      <p>最基础0级证券期货投资知识，最实用权威投资维权资讯</p>
+      <div class="clearfix">
         <ul class="center-box">
-          <a href="#">
-            <li class="center-box--img"><img src="../static/assets/img/1.1.png" alt=""></li>
-            <li class="center-box--title">新手入门</li>
-            <li class="center-box--inf">股票、基金、债券，浩瀚投资之路，给您一把开门的钥匙</li>
-          </a>
+          <li class="center-box--img">
+            <div class="img1"></div>
+          </li>
+          <li class="center-box--title">新手入门</li>
+          <li class="center-box--inf">股票、基金、债券，浩瀚投资之路，给您一把开门的钥匙</li>
+          <li>
+            <a href="#" class="center-href">
+              更多
+            </a>
+          </li>
         </ul>
         <ul class="center-box">
-          <a href="#">
-            <li class="center-box--img"><img src="../static/assets/img/1.2.png" alt=""></li>
-            <li class="center-box--title">进阶知识</li>
-            <li class="center-box--inf">融资、融券、港股、期权，带你玩转金融市场最新利器</li>
-          </a>
+          <li class="center-box--img">
+            <div class="img2"></div>
+          </li>
+          <li class="center-box--title">进阶知识</li>
+          <li class="center-box--inf">融资、融券、港股、期权，带你玩转金融市场最新利器</li>
+          <li>
+            <a href="#" class="center-href">
+              更多
+            </a>
+          </li>
         </ul>
         <ul class="center-box">
-          <a href="#">
-            <li class="center-box--img"><img src="../static/assets/img/1.3.png" alt=""></li>
-            <li class="center-box--title">政策法规</li>
-            <li class="center-box--inf">网络投资者保护法规咨询</li>
-          </a>
+          <li class="center-box--img">
+            <div class="img3"></div>
+          </li>
+          <li class="center-box--title">政策法规</li>
+          <li class="center-box--inf">网络投资者保护法规咨询</li>
+          <li>
+            <a href="#" class="center-href">
+              更多
+            </a>
+          </li>
         </ul>
       </div>
       <button type="button" name="button" class="button ">学习更多</button>
@@ -135,11 +152,8 @@
     </div>
     <div class="section video">
       <h2>投教视频</h2>
-      <p>14年来，我们坚持开市前为你奉上证券市场要闻解读。在这，你会走在证券市场最前沿。同时这里还有你想要的各种投资知识免费课程</p>
+      <p>14年来，我们坚持开市前为你奉上证券市场要闻解读。在这，你会走在证券市场最前沿。同时这里还有你想要的各种投资知识免费课程”改为“在这，你会走在证券期货市场最前沿。同时这里还有你想要的各种投资知识免费课程</p>
       <div class="video-box">
-        <div class="l video-box--player">
-          <div id="playercontainer"></div>
-        </div>
         <div class="l video-box--playlist">
           <ul class="playlistBtn">
             <li class="active">近期推荐</li>
@@ -193,6 +207,10 @@
             </ul>
           </div>
         </div>
+        <div class="l video-box--player">
+          <div id="playercontainer"></div>
+        </div>
+
       </div>
       <button type="button" name="button" class="button ">学习更多</button>
 
@@ -201,122 +219,160 @@
       <h2>专项活动</h2>
       <p>聚焦最新鲜投教活动，最详实完整案例，读必有所获</p>
       <div>
-        <ul class="activity-box">
-          <a href="#">
+        <ul class="activity-box" id="zf">
+
             <li class="activity-box--title">整非活动</li>
             <li class="activity-box--item">
-              <h3>远离非法证券活动 传递正能量——防非能力趣味测试题</h3>
-              <span>2016-01-01</span>
+              <h3></h3>
+              <span></span>
             </li>
             <li class="activity-box--inf">
-                防非能力趣味测试题
+              <i></i>
             </li>
-          </a>
+
         </ul>
 
-        <ul class="activity-box">
-          <a href="#">
+        <ul class="activity-box" id="hd">
+
             <li class="activity-box--title">投教活动</li>
             <li class="activity-box--item">
-              <h3>广发证券落实投资教育活动日——走进上市公司（第二期）活动顺利开展</h3>
-              <span>2016-01-01</span>
+              <h3></h3>
+              <span></span>
             </li>
             <li class="activity-box--inf">
-                为进一步落实2016年全面证券期货监管工作会议精神，强化中小投资者权利意识，公司积极响应落实上交所“我是股东”投资者教育与保护主题系列活动。
+                <i></i>
             </li>
-          </a>
+
         </ul>
 
-        <ul class="activity-box">
-          <a href="#">
+        <ul class="activity-box" id="tj">
+
             <li class="activity-box--title">投教读报</li>
             <li class="activity-box--item">
-              <h3>广发证券落实投资教育活动日——走进上市公司（第二期）活动顺利开展</h3>
-              <span>2016-01-01</span>
+              <h3></h3>
+              <span></span>
             </li>
             <li class="activity-box--inf">
-              为进一步落实2016年全面证券期货监管工作会议精神，强化中小投资者权利意识，公司积极响应落实上交所“我是股东”投资者教育与保护主题系列活动。
+              <i></i>
             </li>
-          </a>
+
         </ul>
 
-        <ul class="activity-box">
-          <a href="#">
+        <ul class="activity-box" id="zl">
+
             <li class="activity-box--title">反洗钱专栏</li>
             <li class="activity-box--item">
-              <h3>【案例】远离网络洗钱陷阱</h3>
-              <span>2016-01-01</span>
+              <h3></h3>
+              <span></span>
             </li>
             <li class="activity-box--inf">
-                远离网络洗钱陷阱—反洗钱法颁布十周年专辑之网络洗钱陷阱案例篇
+              <i></i>
             </li>
-          </a>
+
         </ul>
 
+      </div>
+      <button type="button" name="button" class="button ">学习更多</button>
+
+    </div>
+    <div class="section investor">
+      <h2>投资者保护</h2>
+      <p>在模拟体验区里，您可以通过参与股票、基金、融资融券等模拟交易和操作，亲身体验证券投资的乐趣与风险，轻松学习证券知识，了解证券交易</p>
+      <div>
+        <ul class="investor-box">
+          <a href="#">
+            <li class="investor-box--img">
+              <div class="boximg img4">
+              </div>
+            </li>
+            <li class="investor-box--title">公平在身边</li>
+            <li class="investor-box--inf">“公平在身边”部署六大任务 保护投资者合法权益</li>
+          </a>
+        </ul>
+        <ul class="investor-box">
+          <li class="investor-box--img">
+            <div class="boximg img5">
+            </div>
+          </li>
+          <li class="investor-box--title">诚信建设宣传活动</li>
+          <li class="investor-box--inf">开展诚信建设专题宣传教育活动总结为深入贯彻文明委《关于推进诚信建设制度化的意见》</li>
+        </ul>
       </div>
       <button type="button" name="button" class="button ">学习更多</button>
 
     </div>
     <div class="section transaction">
       <h2>仿真交易</h2>
-      <p>在模拟体验区里，您可以通过参与股票、基金、融资融券等模拟交易和操作，亲身体验证券投资的乐趣与风险，轻松学习证券知识，了解证券交易</p>
+      <p>在模拟体验区里，您可以通过参与股票、基金、融资融券等模拟交易和操作，亲身体验证券投资的乐趣与风险，轻松学习证券知识，了解证券交易”改为“通过仿真交易等模拟交易和操作，亲身体验证券期货投资的乐趣与风险，轻松学习证券期货知识，了解证券期货交易</p>
       <div>
         <ul class="transaction-box">
           <a href="#">
-            <li class="transaction-box--img"><img src="../static/assets/img/4.1.png" alt=""></li>
+            <li class="transaction-box--img"><i class="imgbox img6"></i></li>
             <li class="transaction-box--title">仿真交易流程</li>
             <li class="transaction-box--inf">股票、基金、债券，浩瀚投资之路，给您一把开门的钥匙</li>
           </a>
         </ul>
         <ul class="transaction-box">
           <a href="#">
-            <li class="transaction-box--img"><img src="../static/assets/img/4.2.png" alt=""></li>
-            <li class="transaction-box--title">股指仿真规则</li>
+            <li class="transaction-box--img"><i class="imgbox img7"></i></li>
+            <li class="transaction-box--title">仿真规则</li>
             <li class="transaction-box--inf">融资、融券、港股、期权，带你玩转金融市场最新利器</li>
           </a>
         </ul>
         <ul class="transaction-box">
-          <a href="#">
-            <li class="transaction-box--img"><img src="../static/assets/img/4.3.png" alt=""></li>
-            <li class="transaction-box--title">国债仿真规则</li>
-            <li class="transaction-box--inf">网络投资者保护法规咨询</li>
-          </a>
-        </ul>
-        <ul class="transaction-box">
-          <a href="#">
-            <li class="transaction-box--img"><img src="../static/assets/img/4.4.png" alt=""></li>
+          <a href="http://www.gfqh.com.cn/tzzjy/gzfz/grkhsq/">
+            <li class="transaction-box--img"><i class="imgbox img8"></i></li>
             <li class="transaction-box--title">个人客户申请</li>
             <li class="transaction-box--inf">网络投资者保护法规咨询</li>
           </a>
         </ul>
         <ul class="transaction-box">
-          <a href="#">
-            <li class="transaction-box--img"><img src="../static/assets/img/4.5.png" alt=""></li>
+          <a href="http://www.gfqh.com.cn/tzzjy/gzfz/bmztcx/">
+            <li class="transaction-box--img"><i class="imgbox img9"></i></li>
             <li class="transaction-box--title">报名状态查询</li>
             <li class="transaction-box--inf">网络投资者保护法规咨询</li>
           </a>
         </ul>
       </div>
-      <button type="button" name="button" class="button ">学习更多</button>
+
 
     </div>
     <div class="footer">
       <div class="footer-box">
-        <img src="../static/assets/img/logo.png" alt="" class="l" style="margin-top:40px">
+
+        <div class="l footer-box--infl">
+
+          <p class="item5">
+            <select class="" name="" style="margin-right:20px;">
+            <option value="">=投教相关网站=</option>
+            <option value="http://www.baidu.com"><a href="http://www.baidu.com">中国证监会</a></option>
+            <option value="">中国证券业协会</option>
+            <option value="">广东证监局</option>
+            <option value="">上海证券交易所</option>
+            <option value="">深圳证券交易所</option>
+            <option value="">投资者保护基金公司</option>
+
+            </select> 投资者教育基地网站历史总访问量  <span></span>人</p>
+          <p class="item4">
+            <span style="margin-right:20px;">粤ICP备11070729号</span>
+            <span></span>
+          </p>
+
+        </div>
         <div class="r footer-box--inf">
           <p class="item1">全国统一客服热线</p>
-          <p class="item2">交易日：8:30-21:00</p>
-          <p class="item3"><img src="../static/assets/img/phone.png" alt="">95105826</p>
-          <p class="item4">广发期货有限公司版权所有</p>
-          <p class="item5">投资者教育基地网站历史总访问量  <span>12890130</span>人</p>
+          <p class="item2">交易日：8:30-17:00</p>
+          <p class="item3"><img src="/static/assets/img/phone.png" alt="">95105826</p>
+
         </div>
       </div>
     </div>
   </div>
-  <script src="./static/assets/js/jquery-1.10.2.min.js" charset="utf-8"></script>
-  <script src="./static/js/index.js" charset="utf-8"></script>
-  <script src="./static/assets/js/cyberplayer.js" charset="utf-8"></script>
-  <script src="./static/js/video.js" charset="utf-8"></script>
+  <script src="/static/assets/js/jquery-1.10.2.min.js" charset="utf-8"></script>
+  <script src="/static/js/api.js" charset="utf-8"></script>
+  <script src="/static/js/index.js" charset="utf-8"></script>
+  <script src="/static/assets/js/cyberplayer.js" charset="utf-8"></script>
+  <script src="/static/js/video.js" charset="utf-8"></script>
 
 </body>
 </html>

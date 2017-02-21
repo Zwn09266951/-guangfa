@@ -1,6 +1,6 @@
 $(function () {
   var player = cyberplayer("playercontainer").setup({
-              width: 800,
+              width: 600,
               height: 450,
               stretching: "uniform",
               file: "http://multimedia.bj.bcebos.com/media/motorOutput.mp4",

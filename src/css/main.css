@@ -1,20 +1,36 @@
 @import "../components/css/default.css";
+@import "../components/css/pagination.css";
+@media screen and (max-width: 1200px) {
+    .app {
+			width: 1200px;
+    }
+}
 .button {
 	height: 56px;
 	display: inline-block;
 	width: 176px;
 	border: 2px solid #3a89da;
-	border-radius: 30px;
-	background: none;
+	border-radius: 5px;
+	background: #3a89da;
 	font-size: 14px;
-	color: #333;
+	color: #fff;
 	outline: none;
 	cursor: pointer;
 
 	&:hover {
-		background:#3a89da;
-		color: #fff;
+		background:#fff;
+		color: #3a89da;
 	}
+}
+.boximg {
+	width: 65px;
+	height: 65px;
+	overflow: hidden;
+	margin: 40px auto 50px auto;
+	position: relative;
+  background: url(../assets/img/bg.png) no-repeat;
+  transition: all .3s;
+
 }
 .jw-warning {
 	display: none!important;
@@ -59,7 +75,6 @@
 
 		@modifier mune {
 
-
 			li {
 				line-height: 85px;
 				height: 85px;
@@ -72,6 +87,11 @@
 				position: relative;
 				font-size: 18px;
 				z-index: 99;
+
+        a {
+          text-decoration: none;
+          color: #000;
+        }
 
 				img {
 					margin-left: 10px!important;
@@ -104,7 +124,7 @@
 			box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.5);
 
 			span {
-				font-size: 12px;
+				font-size: 14px;
 				display: block;
 				line-height: 30px;
 				height: 30px;
@@ -280,29 +300,96 @@ padding-bottom: 50px;
 @component center {
 	background: #f9f9f9;
 
+  div {
+    width: 1200px;
+    margin: 0 auto;
+
+  }
+  @descendent href {
+    width: 108px;
+    height: 40px;
+    border: 2px solid #3a89da;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #3a89da;
+  }
+
 	@descendent box {
-		display: inline-table;
-		margin: 0 105px;
+    float: left;
+    width: 360px;
+    height: 260px;
+    margin: 0 20px;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 20px;
 
 		li {
 			width: 150px;
+      margin: 0 auto;
+		}
+		i {
+			height: 80px;
+			width: 80px;
+			margin: 0 auto;
+			background: red;
+			display: inline-block;
+		}
+		.imgbox {
+			background: url(../assets/img/icon5.png) no-repeat;
+			transition: all .3s;
 		}
 
 		img {
-			margin-bottom: 45px;
+			/*margin-bottom: 45px;*/
 		}
 
 		@modifier title {
 			font-size: 24px;
 			color: #28303f;
-			margin-bottom: 20px;
+			margin-bottom: 20px!important;
+      margin-top: 70px!important;
 		}
 
 		@modifier inf {
 			font-size: 14px;
 			line-height: 22px;
 			color: #999;
-			height: 110px;
+			height: 80px;
+		}
+
+    @modifier img {
+      position: relative;
+			div {
+        height: 80px;
+        width: 80px;
+        background: red;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .img1 {
+        background: url(../assets/img/bg.png) no-repeat;
+        background-position: -190px -153px;
+      }
+
+      .img2 {
+        background: url(../assets/img/bg.png) no-repeat;
+        background-position: -460px -153px;
+      }
+
+      .img3 {
+        background: url(../assets/img/bg.png) no-repeat;
+        background-position: -730px -153px;
+      }
 		}
 	}
 }
@@ -316,15 +403,15 @@ padding-bottom: 50px;
 		margin-bottom: 40px;
 
 		@modifier player {
-			width: 800px;
+			width: 600px;
 			height: 450px;
 			background: #898;
 		}
 
 		@modifier playlist {
-			width: 304px;
+			width: 600px;
 			overflow: hidden;
-			margin-left: 70px;
+
 
 			.playlistBtn {
 				width: 100%;
@@ -388,9 +475,9 @@ padding-bottom: 50px;
 
 				li {
 					padding-right: 20px;
-					padding: 0 10px;
+					padding: 0 60px;
 					background: url(../assets/img/player.png) no-repeat;
-					background-position:right 14px;
+					background-position:22px 16px;
 					cursor: pointer;
 					height: 54px;
 					line-height: 54px;
@@ -418,6 +505,7 @@ padding-bottom: 50px;
 		width: 1200px;
 		overflow: hidden;
 		margin: 0 auto;
+
 	}
 	@descendent box {
 		padding: 40px 30px 40px 30px;
@@ -427,6 +515,9 @@ padding-bottom: 50px;
 		width: 217px;
 		text-align: left;
 		margin-bottom: 50px;
+		&:hover {
+			filter:brightness(.9);
+		}
 		&:first-child{
 			margin-left:0!important;
 		}
@@ -468,36 +559,177 @@ padding-bottom: 50px;
 			margin-top: 20px;
 			height: 106px;
 			line-height: 22px;
+      overflow: hidden;
+      i {
+        overflow: hidden;
+      }
 		}
 	}
 }
 
-@component transaction {
+@component investor {
 
-	div {
-		width: 1200px;
-		margin: 0 auto;
-	}
+
+  div {
+    margin-bottom: 50px;
+  }
 
 	@descendent box {
 		display: inline-table;
 		margin-left: 108px;
+    background: #fbfbfb;
+    height: 300px;
+    width: 400px;
+    border-bottom: 4px solid #fbfbfb;
+
+		.img4 {
+			background-position: -200px -320px;
+		}
+		.img5 {
+			background-position: -555px -320px;
+		}
+
+		&:hover {
+      border-bottom: 4px solid #3a89da;
+			.img4 {
+        background-position: -378px -320px;
+			}
+			.img5 {
+				background-position: -735px -320px;
+			}
+			.img6 {
+				background-position: 0 -936px;
+			}
+			.img7 {
+				background-position: 0 -1768px;
+			}
+		}
 		&:first-child {
 			margin-left: 0px!important;
 		}
 
 		li {
-			width: 150px;
+			/*width: 150px;*/
+      margin: 0 auto;
 		}
 
-		img {
+		i {
+			height: 104px;
+			width: 104px;
+			margin: 0 auto;
+			background: red;
+			display: inline-block;
 			margin-bottom: 45px;
+		}
+    @modifier img {
+      .imgbox {
+  			background: url(../assets/img/bg.png) no-repeat;
+  			transition: all .3s;
+  		}
+    }
+
+		.img6 {
+			background-position: 0 -832px;
+		}
+		.img7 {
+			background-position: 0 -1664px;
+		}
+		img {
+			/*margin-bottom: 45px;*/
 		}
 
 		@modifier title {
 			font-size: 24px;
 			color: #28303f;
-			margin-bottom: 20px;
+			margin-bottom: 20px!important;
+		}
+
+		@modifier inf {
+			font-size: 14px;
+			line-height: 22px;
+			color: #999;
+			height: 110px;
+      width: 300px!important;
+		}
+	}
+}
+
+@component transaction {
+	background: #f9f9f9;
+	div {
+		width: 1200px;
+		margin: 0 auto;
+    margin-bottom: 50px;
+	}
+
+	@descendent box {
+		display: inline-table;
+
+    background: #fff;
+    height: 300px;
+    width: 240px;
+    border-bottom: 4px solid #fbfbfb;
+
+    .img6 {
+      background-position: -200px -445px!important;
+    }
+    .img7 {
+      background-position: -555px -440px!important;
+    }
+    .img8 {
+      background-position: -200px -566px!important;
+    }
+    .img9 {
+      background-position: -555px -570px!important;
+    }
+
+		&:hover {
+      border-bottom: 4px solid #3a89da;
+			.img6 {
+        background-position: -378px -445px!important;
+			}
+			.img7 {
+				background-position: -735px -440px!important;
+			}
+      .img8 {
+        background-position: -380px -566px!important;
+      }
+      .img9 {
+        background-position: -735px -570px!important;
+      }
+		}
+		&:first-child {
+			margin-left: 0px!important;
+		}
+
+		li {
+			width: 170px;
+      margin: 0 auto;
+		}
+
+		i {
+			height: 65px;
+			width: 65px;
+			margin: 50px auto 60px auto;
+			background: red;
+			display: inline-block;
+
+		}
+    @modifier img {
+      .imgbox {
+  			background: url(../assets/img/bg.png) no-repeat;
+  			transition: all .3s;
+  		}
+    }
+
+		img {
+			/*margin-bottom: 45px;*/
+		}
+
+		@modifier title {
+			font-size: 24px;
+			color: #28303f;
+			margin-bottom: 20px!important;
 		}
 
 		@modifier inf {
@@ -511,7 +743,7 @@ padding-bottom: 50px;
 
 @component footer {
 	height: 215px;
-	background: #28303f;
+	background: #505050;
 
 	@descendent box {
 		width: 1200px;
@@ -535,15 +767,230 @@ padding-bottom: 50px;
 			}
 			.item3 {
 				line-height: 30px;
-				font-size: 24px;
+				font-size: 40px;
 
 				img {
 					bottom: 3px;
 					right: 7px;
 					position: relative;
+					height: 40px;
+					width: 40px;
 				}
+			}
+		}
+
+		@modifier infl {
+			color: #fff;
+			font-size: 14px;
+			line-height: 30px;
+			margin-top: 70px;
+
+			.item4 {
+				margin-top: 20px;
 			}
 		}
 	}
 
+}
+
+@component mune {
+
+  @descendent top {
+    height: 293px;
+    background: #3a89da;
+    position: relative;
+    .activit {
+      div {
+        margin-right: 260px;
+      }
+    }
+    .investor {
+      div {
+        margin-right: 300px;
+        float: none;
+        display: inline-block;
+      }
+    }
+    @modifier list {
+      margin: 0 auto;
+      width: 1200px;
+      text-align: center;
+      div {
+        margin-right: 450px;
+        margin-top: 70px;
+        position: relative;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+
+      .guide {
+
+      }
+
+      .active {
+        b {
+          position: absolute;
+          left: 29%;
+          bottom: -70px;
+          width: 0;
+          height: 0;
+          border-width: 0 24px 17px;
+          border-style: solid;
+          border-color: transparent transparent #fff;
+        }
+      }
+
+      i {
+        height:100px;
+        width: 100px;
+        background: red;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+
+      li {
+        float: left;
+      }
+
+      strong {
+        display: block;
+        font-size: 24px;
+        padding-top: 5px;
+        line-height: 48px;
+        color: #fff;
+      }
+
+
+    }
+  }
+  @descendent bottom {
+    display: none;
+    height: 170px;
+    line-height: 170px;
+    background: #fff;
+    text-align: center;
+    &:first-child {
+      display:block;
+    }
+    .active {
+      background: #3a89da;
+      color: #fff;
+    }
+    @modifier list {
+      text-align: center;
+      display: inline-block;
+      padding: 0 20px;
+      border: 2px solid #3a89da;
+      border-radius: 18px;
+      font-size: 16px;
+      height: 36px;
+      line-height: 36px;
+      margin-right: 50px;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0px!important;
+      }
+      &:hover {
+        background: #3a89da;
+        color: #fff;
+      }
+
+    }
+  }
+}
+
+@component main {
+  background: #eff5fa;
+  padding: 70px 0;
+  @descendent box {
+    width: 1200px;
+    margin: 0 auto;
+    li {
+      padding: 0 20px;
+      line-height: 60px;
+      height: 60px;
+      cursor: pointer;
+      &:nth-of-type(2n - 1) {
+        background: #e5edf6;
+      }
+      &:hover {
+        background: #bed5ec;
+      }
+    }
+    p {
+    font-size: 44px;
+    color: #333;
+    line-height: 46px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    }
+  }
+}
+
+@component time {
+
+}
+
+@component details {
+  @descendent mune {
+    height: 20px;
+    padding: 15px 0;
+    background: #3a89da;
+    @modifier bar {
+      width: 1200px;
+      margin: 0 auto;
+      height: 20px;
+      line-height: 20px;
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+
+  @descendent box {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 100px;
+    background: #fff;
+    @modifier title {
+      font-size: 44px;
+      text-align: center;
+      line-height: 50px;
+      padding: 15px 0;
+    }
+    @modifier share {
+      border: 2px solid #e5e5e5;
+      border-left: 0;
+      border-right: 0;
+      padding: 20px 50px;
+      height: 36px;
+      line-height: 36px;
+      span {
+        &:first-child {
+          height: 24px;
+          line-height: 24px;
+          padding: 0 10px;
+          background: #8eb5de;
+          color: #fff;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+    @modifier info {
+      padding: 50px;
+      background: #f8f8f8;
+      line-height: 30px;
+      font-size: 16px;
+      span {
+        background: #ccc;
+        padding: 0 5px;
+        margin-right: 20px;
+      }
+    }
+  }
 }
