@@ -30,7 +30,36 @@ _get('http://edu.gfqh.cn/index.php/detail/'+ url)
   detailsContent.html(aa[0].data);
   detailsShare.find('span').eq(0).addClass('returnlist').html(article.tag);
 
+
+  function parenttag() {
+    switch (article.parenttag) {
+      case '新手入门':
+        detailsBar.html("<a href='/'>首页</a><span>&gt;</span><a href='center.html'>知识中心</a><span>&gt;</span><a href='center.html'>新手入门</a><span>&gt;</span><a class='returnlist'>"+ article.tag +"</a>")
+        break;
+      case '进阶知识':
+        detailsBar.html("<a href='/'>首页</a><span>&gt;</span><a href='center.html'>知识中心</a><span>&gt;</span><a href='center2.html'>进阶知识</a><span>&gt;</span><a class='returnlist'>"+ article.tag +"</a>")
+        break;
+    }
+  }
   switch (article.tag) {
+    case '金融':
+      parenttag();
+      break;
+    case '农产品':
+      parenttag();
+      break;
+    case '化工':
+      parenttag();
+      break;
+    case '贵金属':
+      parenttag();
+      break;
+    case '有色金属':
+      parenttag();
+      break;
+    case '黑色金属':
+      parenttag();
+      break;
     case '仿真规则':
       detailsBar.html("<a href='/'>首页</a><span>&gt;</span><a >仿真规则</a>");
       break;
@@ -91,10 +120,61 @@ _get('http://edu.gfqh.cn/index.php/detail/'+ url)
       break;
     }
   $('.returnlist').click(function(event) {
-    switch (article.tag) {
-      case '仿真规则':
-        window.location.href = 'details.html#' + 'gjfl';
+    function parent(){
+      switch (article.tag){
+        case '金融':
+          window.location.href = 'center.html#' + 'nfin';
+          break;
+        case '农产品':
+          window.location.href = 'center.html#' + 'nfarm';
+          break;
+        case '化工':
+          window.location.href = 'center.html#' + 'nche';
+          break;
+        case '贵金属':
+          window.location.href = 'center.html#' + 'npre';
+          break;
+        case '有色金属':
+          window.location.href = 'center.html#' + 'ncolour';
+          break;
+        case '黑色金属':
+          window.location.href = 'center.html#' + 'nblack';
+          break;
+      }
+    }
+    function parents(){
+      switch (article.tag){
+        case '金融':
+          window.location.href = 'center2.html#' + 'adfin';
+          break;
+        case '农产品':
+          window.location.href = 'center2.html#' + 'adfarm';
+          break;
+        case '化工':
+          window.location.href = 'center2.html#' + 'adche';
+          break;
+        case '贵金属':
+          window.location.href = 'center2.html#' + 'adpre';
+          break;
+        case '有色金属':
+          window.location.href = 'center2.html#' + 'adcolour';
+          break;
+        case '黑色金属':
+          window.location.href = 'center2.html#' + 'adblack';
+          break;
+      }
+    }
+
+    switch (article.parenttag) {
+      case '新手入门':
+        parent();
         break;
+      case '进阶知识':
+        parents();
+        break;
+    }
+    switch (article.tag) {
+
       case '仿真规则':
         window.location.href = 'center3.html#' + 'xzfg';
         getlist(GET_ALOW);

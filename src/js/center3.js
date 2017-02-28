@@ -1,8 +1,3 @@
-
-//知识中心 文章
-//
-//
-//第一次进入知识中心获取文章列表
 var windowhref = window.location.href;
 var center = windowhref.indexOf('center.html');
 var center2 = windowhref.indexOf('center2.html');

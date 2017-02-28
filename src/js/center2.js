@@ -7,49 +7,56 @@ var windowhref = window.location.href;
 var center = windowhref.indexOf('center.html');
 var center2 = windowhref.indexOf('center2.html');
 var center3 = windowhref.indexOf('center3.html');
-var fjfl = windowhref.indexOf('fjfl');
-var xzfg = windowhref.indexOf('xzfg');
-var bmgz = windowhref.indexOf('bmgz');
-var jysgz = windowhref.indexOf('jysgz');
-var zlgz = windowhref.indexOf('zlgz');
-var fxq = windowhref.indexOf('fxq');
-var pfgz = windowhref.indexOf('pfgz');
+
+var adfin = windowhref.indexOf('adfin');
+var adfarm = windowhref.indexOf('adfarm');
+var adche = windowhref.indexOf('adche');
+var adpre = windowhref.indexOf('adpre');
+var adcolour = windowhref.indexOf('adcolour');
+var adblack = windowhref.indexOf('adblack');
 
 var url = windowhref.substring(center + 1);
 var url2 = windowhref.substring(center2 + 1);
 var url3 = windowhref.substring(center3);
 
-
-if (url3 = 'center.html') {
-  getlist(GET_STATUTES);
+if (center !== -1) {
+  getlist(GET_GUIDE);
 }
-if (fjfl !== -1) {
+if (center2 !== -1) {
+  getlist(GET_ARTICLE);
+}
+if (center3 !== -1) {
   getlist(GET_STATUTES);
+
+}
+// 
+// if (xzfg !== -1) {
+//   getlist(GET_ALOW);
+// }
+
+if (adblack !== -1) {
+  getlist(GET_ARTICLE);
   $('.mune-bottom--list').eq(0).addClass('active').siblings().removeClass('active');
 }
-if (xzfg !== -1) {
-  getlist(GET_ALOW);
+if (adcolour !== -1) {
+  getlist(GET_ADCOLOUR);
   $('.mune-bottom--list').eq(1).addClass('active').siblings().removeClass('active');
 }
-if (bmgz !== -1) {
-  getlist(GET_DLOW);
+if (adpre !== -1) {
+  getlist(GET_ADPRE);
   $('.mune-bottom--list').eq(2).addClass('active').siblings().removeClass('active');
 }
-if (jysgz !== -1) {
-  getlist(GET_ELOW);
+if (adche !== -1) {
+  getlist(GET_ADCHE);
   $('.mune-bottom--list').eq(3).addClass('active').siblings().removeClass('active');
 }
-if (zlgz !== -1) {
-  getlist(GET_SRULE);
+if (adfarm !== -1) {
+  getlist(GET_ADFARM);
   $('.mune-bottom--list').eq(4).addClass('active').siblings().removeClass('active');
 }
-if (fxq !== -1) {
-  getlist(GET_MRULE);
+if (adfin !== -1) {
+  getlist(GET_ADFIN);
   $('.mune-bottom--list').eq(5).addClass('active').siblings().removeClass('active');
-}
-if (pfgz !== -1) {
-  getlist(GET_LRULE);
-  $('.mune-bottom--list').eq(6).addClass('active').siblings().removeClass('active');
 }
 
 
@@ -82,24 +89,21 @@ $('.statute').click(function(event) {
   // getlist(GET_STATUTES);
   window.location.href = 'center3.html';
 });
-$('#gjfl').click(function(event) {
-  getlist(GET_STATUTES);
+$('#adblack').click(function(event) {
+  getlist(GET_ARTICLE);
 });
-$('#xzfg').click(function(event) {
-  getlist(GET_ALOW);
+$('#adcolour').click(function(event) {
+  getlist(GET_ADCOLOUR);
 });
-$('#bmgz').click(function(event) {
-  getlist(GET_DLOW);
+$('#adpre').click(function(event) {
+  getlist(GET_ADPRE);
 });
-$('#jysgz').click(function(event) {
-  getlist(GET_ELOW);
+$('#adche').click(function(event) {
+  getlist(GET_ADCHE);
 });
-$('#zlgz').click(function(event) {
-  getlist(GET_SRULE);
+$('#adfarm').click(function(event) {
+  getlist(GET_ADFARM);
 });
-$('#fxq').click(function(event) {
-  getlist(GET_MRULE);
-});
-$('#pfgz').click(function(event) {
-  getlist(GET_LRULE);
+$('#adfin').click(function(event) {
+  getlist(GET_ADFIN);
 });

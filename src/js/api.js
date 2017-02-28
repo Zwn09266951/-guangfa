@@ -1,8 +1,20 @@
 
 var API = 'http://edu.gfqh.cn/index.php/';
 //知识中心
-var GET_ARTICLE = API + 'alist/advance/';
-var GET_GUIDE = API + 'alist/new/';
+var GET_GUIDE = API + 'alist/nblack/';
+var GET_NCOLOUR = API + 'alist/ncolour/';
+var GET_NPRE = API + 'alist/npre/';
+var GET_NCHE = API + 'alist/nche/';
+var GET_NFARM = API + 'alist/nfarm/';
+var GET_NFIN = API + 'alist/nfin/';
+//进阶知识
+var GET_ARTICLE = API + 'alist/adblack/';
+var GET_ADCOLOUR = API + 'alist/adcolour/';
+var GET_ADPRE = API + 'alist/adpre/';
+var GET_ADCHE = API + 'alist/adche/';
+var GET_ADFARM = API + 'alist/adfarm/';
+var GET_ADFIN = API + 'alist/adfin/';
+//政策法规
 var GET_STATUTES = API + 'alist/clow/';
 var GET_ALOW = API + 'alist/alow/';
 var GET_DLOW = API + 'alist/dlow/';
@@ -28,6 +40,7 @@ var GET_VIDEOALL = API + 'allvideo/';
 var GET_SEARCHALL = API + 'searchall/';
 var GET_SEARCHARTICLE = API + 'searcharticle/'
 var GET_SEARCHVIDEO = API + 'searchvideo/'
+
 var _get = function (url, query) {
   return $.ajax({
     url: url,
@@ -109,7 +122,6 @@ function vdlist(id) {
     if ($("body").scrollTop() > 100) {
       $("body").animate({scrollTop:100}, 500);
     }
-
     var indexlist = res.d.indexlist
     var ranking = res.d.ranking
     var url = res.d.indexlist[0].link
