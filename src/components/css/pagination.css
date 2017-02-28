@@ -19,7 +19,8 @@
 	overflow:hidden;
 }
 .M-box span,.M-box1 span,.M-box2 span,.M-box3 span{
-	float: left;
+	/*float: left;*/
+  display: inline-block;
 	margin:0 5px;
 	width: 38px;
     height: 38px;
@@ -28,7 +29,8 @@
     font-size: 14px;
 }
 .M-box .active,.M-box1 .active,.M-box2 .active,.M-box3 .active{
-	float: left;
+	/*float: left;*/
+  display: inline-block;
 	margin:0 5px;
 	width: 38px;
     height: 38px;
@@ -39,7 +41,8 @@
     border: 1px solid #e91e63;
 }
 .M-box a,.M-box1 a,.M-box2 a,.M-box3 a{
-	float: left;
+	/*float: left;*/
+  display: inline-block;
 	margin:0 5px;
 	width: 38px;
     height: 38px;
@@ -64,7 +67,7 @@
 }
 
 input{
-    float: left;
+    /*float: left;
     margin:0 5px;
     width: 38px;
     height: 38px;
@@ -74,5 +77,5 @@ input{
     border: 1px solid #ebebeb;
     outline: none;
     color: #bdbdbd;
-    font-size: 14px;
+    font-size: 14px;*/
 }

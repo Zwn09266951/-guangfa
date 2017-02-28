@@ -3,9 +3,31 @@
 //
 //
 //第一次进入知识中心获取文章列表
-$(function() {
+var windowhref = window.location.href;
+var center = windowhref.indexOf('center.html');
+var center2 = windowhref.indexOf('center2.html');
+var center3 = windowhref.indexOf('center3.html');
+var xzfg = windowhref.indexOf('xzfg');
+var url = windowhref.substring(center + 1);
+var url2 = windowhref.substring(center2 + 1);
+var url3 = windowhref.substring(center3);
+console.log(xzfg);
+if (center !== -1) {
   getlist(GET_GUIDE);
-})
+}
+if (center2 !== -1) {
+  getlist(GET_ARTICLE);
+}
+if (center3 !== -1) {
+  getlist(GET_STATUTES);
+  console.log(url3);
+}
+
+if (xzfg !== -1) {
+  getlist(GET_ALOW);
+  console.log('aa');
+}
+
 
 $('.mune-top--list div').each(function() {
   $(this).click(function(event) {
@@ -23,15 +45,18 @@ $('.mune-bottom--list').each(function() {
 
 /* 新手入门 */
 $('.guide').click(function(event) {
-  getlist(GET_GUIDE);
+  // getlist(GET_GUIDE);
+  window.location.href = 'center.html';
 });
 /* 进阶知识 */
 $('.know').click(function(event) {
-  getlist(GET_ARTICLE);
+  // getlist(GET_ARTICLE);
+  window.location.href = 'center2.html';
 });
 /* 政策法规 */
 $('.statute').click(function(event) {
-  getlist(GET_STATUTES);
+  // getlist(GET_STATUTES);
+  window.location.href = 'center3.html';
 });
 $('#gjfl').click(function(event) {
   getlist(GET_STATUTES);

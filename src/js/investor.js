@@ -1,11 +1,13 @@
-
-//专项活动 文章
-//
-//
-//第一次进入知识中心获取文章列表
-$(function() {
+var windowhref = window.location.href;
+var investor = windowhref.indexOf('investor.html');
+var investor2 = windowhref.indexOf('investor2.html');
+if (investor !== -1) {
   getlist(GET_FAIR);
-})
+}
+if (investor2 !== -1) {
+  getlist(GET_FAITH);
+}
+
 
 $('.mune-top--list div').each(function() {
   $(this).click(function(event) {
@@ -21,8 +23,10 @@ $('.mune-bottom--list').each(function() {
 });
 
 $('.gpzsb').click(function(event) {
+  window.location.href = 'investor.html';
   getlist(GET_FAIR);
 });
 $('.cxjsxchd').click(function(event) {
+  window.location.href = 'investor2.html';
   getlist(GET_FAITH);
 });
